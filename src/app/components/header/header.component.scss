@@ -1,0 +1,32 @@
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 110px;
+  margin: 0;
+
+  background: #312E38 ;
+  padding: 0;
+}
+h1{
+  margin: 0;
+  font-size: 28px;
+  padding: 30px;
+  width: 25%;
+  font-family: 'Rajdhani', sans-serif;
+  color: #F4EDE8;
+}
