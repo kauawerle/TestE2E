@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
-import { ModalComponent } from 'src/app/components/modal/modal.component';
+import { ModalComponent } from 'src/components/modal/modal.component';
+import { HeaderComponent } from 'src/components/header/header.component'
 
 @Component({
   selector: 'app-home',
