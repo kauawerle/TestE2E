@@ -1,27 +1,34 @@
-# TestsE2e
+# Conhecimento sobre testes End to End (ponta a ponta)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
 
-## Development server
+## Sobre o Cypress:
+### Testes feitos do sistema para ver como um usuário se comportaria, esses testes é feito <br> com o intuito de verificar se uma função que puxa uma rota da api está funcionando ou <br> qualquer ação feita  pelo teste está funcionando como devido.<br> Cypress permite escrever todos os tipos de testes:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Ponta a Ponta
+- Testes de integração
+- Testes unitários
 
-## Code scaffolding
+## Documentação:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Cypress](https://docs.cypress.io/guides/overview/why-cypress?utm_medium=Nav&utm_campaign=Docs&utm_source=Test+Runner)
 
-## Build
+- [Cypress with Angular](https://testing-angular.com/end-to-end-testing/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Install Cypress: 
+- `ng add @cypress/schematic`;
+- Selecione Mocha para os testes unitários;
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Vai ser criado uma pasta chamada `Cypres` que dentro dela terá outra pasta escrita `integration` onde você vai conseguir criar seus testes, um arquivo criado automaticamento junto com a instalação, que é chamado `spec.ts`
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Codigo de exemplo: <br>
+ 
+```
+describe('Modal Test', () => {
+  it('Visits the initial project page', () => {
+    cy.visit('/')
+    cy.title()
+    cy.contains('TestsE2E')
+  })
+})
+```
