@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialogRef } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { AboutComponent } from 'src/pages/about/about.component';
 
 @Component({
   selector: 'app-modal',
@@ -9,10 +10,23 @@ import { MatDialogRef } from '@angular/material/dialog';
 export class ModalComponent implements OnInit {
 
   constructor(
-    public dialogRef: MatDialogRef<ModalComponent>
+    public dialogRef: MatDialogRef<ModalComponent>,
+    public dialog: MatDialog
   ) { }
 
   ngOnInit(): void {
+  }
+
+
+  insertText(): void {
+    const dialogRef = this.dialog.open(AboutComponent, {
+      width: '550px',
+      height: '550px'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
   }
 
   cancel(): void {
