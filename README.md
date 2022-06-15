@@ -19,7 +19,7 @@
 - Selecione `Mocha` para os testes unitários;
 
 
-### Vai ser criado uma pasta chamada `Cypres` que dentro dela terá outra pasta escrita `integration` onde você vai conseguir criar seus testes, um arquivo criado automaticamento junto com a instalação, que é chamado `spec.ts`
+### Vai ser criado uma pasta chamada `Cypress` que dentro dela terá outra pasta escrita `integration` onde você vai conseguir criar seus testes, um arquivo criado automaticamento junto com a instalação, que é chamado `spec.ts`
 
 ### Codigo de exemplo: <br>
  
