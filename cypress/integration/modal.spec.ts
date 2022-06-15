@@ -9,6 +9,7 @@ describe('Modal Test', () => {
     cy.wait(4000)
     cy.get('button').click()
     cy.contains('Ok').click()
-
+    cy.wait(4000)
+    cy.contains('Conectar').click()
   })
 })

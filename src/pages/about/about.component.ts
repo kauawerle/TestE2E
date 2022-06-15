@@ -12,4 +12,9 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  conect(): void {
+    alert('teste de conexão');
+
+  }
+
 }
