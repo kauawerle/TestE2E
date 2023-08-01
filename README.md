@@ -2,7 +2,7 @@
 
 
 ## Sobre o Cypress:
-### Testes feitos do sistema para ver como um usuário se comportaria, esses testes é feito <br> com o intuito de verificar se uma função que puxa uma rota da api está funcionando ou <br> qualquer ação feita  pelo teste está funcionando como devido.<br> Cypress permite escrever todos os tipos de testes:
+### Testes feitos do sistema para ver como um usuário se comportaria, esses testes são feitos <br> com o intuito de verificar se uma função que puxa uma rota da api está funcionando ou <br> qualquer ação feita  pelo teste está funcionando como devido.<br> Cypress permite escrever todos os tipos de testes:
 
 - Ponta a Ponta
 - Testes de integração
